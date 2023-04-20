@@ -1,8 +1,10 @@
-package com.st_ilya.databasestudentsmireaproject;
+package com.st_ilya.databasestudentsmireaproject.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.st_ilya.databasestudentsmireaproject.R;
 
 public class MainActivity extends AppCompatActivity {
 
