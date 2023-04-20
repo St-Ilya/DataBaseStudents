@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "511930647278",
+    "project_id": "dbstudentmirea",
+    "storage_bucket": "dbstudentmirea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511930647278:android:326b27964911c0675429ff",
+        "android_client_info": {
+          "package_name": "com.example.database_students"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511930647278-d1tsa01cnbigd7mfuo8klnld8a68v7o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf3KfS7rtmo4gBuJIZ2dtRBC1ZytHpnZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511930647278-d1tsa01cnbigd7mfuo8klnld8a68v7o8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
