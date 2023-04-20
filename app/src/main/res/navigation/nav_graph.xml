@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/loginRegisterFragment"
-        android:name="com.st_ilya.databasestudentsmireaproject.LoginRegisterFragment"
+        android:name="com.st_ilya.databasestudentsmireaproject.views.LoginRegisterFragment"
         android:label="LoginRegisterFragment" />
 </navigation>
