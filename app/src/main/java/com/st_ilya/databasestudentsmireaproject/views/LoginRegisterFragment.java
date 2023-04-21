@@ -37,7 +37,7 @@ public class LoginRegisterFragment extends Fragment {
             @Override
             public void onChanged(FirebaseUser firebaseUser) {
                 if (firebaseUser != null) {
-                    //ToDo Navigation
+                    Toast.makeText(getContext(), "User created", Toast.LENGTH_SHORT).show();
                 }
             }
         });
