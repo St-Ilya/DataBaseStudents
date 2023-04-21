@@ -15,5 +15,9 @@
     <fragment
         android:id="@+id/loggedInFragment"
         android:name="com.st_ilya.databasestudentsmireaproject.views.LoggedInFragment"
-        android:label="LoggedInFragment" />
+        android:label="LoggedInFragment" >
+        <action
+            android:id="@+id/action_loggedInFragment_to_loginRegisterFragment"
+            app:destination="@id/loginRegisterFragment" />
+    </fragment>
 </navigation>
