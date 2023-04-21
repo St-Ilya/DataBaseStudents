@@ -21,10 +21,14 @@ public class AppRepository {
 
     public AppRepository(Application application) {
         this.application = application;
+        this.firebaseAuth = FirebaseAuth.getInstance();
+        this.userMutableLiveData = new MutableLiveData<>();
+        this.loggedOutMutableLiveData = new MutableLiveData<>();
 
-        firebaseAuth = FirebaseAuth.getInstance();
-        userMutableLiveData = new MutableLiveData<>();
-        loggedOutMutableLiveData = new MutableLiveData<>();
+        if (firebaseAuth.getCurrentUser() != null) {
+            userMutableLiveData.postValue(firebaseAuth.getCurrentUser());
+            loggedOutMutableLiveData.postValue(false);
+        }
     }
 
     public void register(String email, String password) {
@@ -49,7 +53,7 @@ public class AppRepository {
                         if (task.isSuccessful()) {
                             userMutableLiveData.postValue(firebaseAuth.getCurrentUser());
                         } else {
-                            Toast.makeText(application, "Register Failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(application, "Login Failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

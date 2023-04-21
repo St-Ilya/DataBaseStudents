@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,6 +35,9 @@ public class LoggedInFragment extends Fragment {
             public void onChanged(FirebaseUser firebaseUser) {
                 if (firebaseUser != null) {
                     loggedInUserTextView.setText("Logged In User: " + firebaseUser.getEmail());
+                    logOutButton.setEnabled(true);
+                } else {
+                    logOutButton.setEnabled(false);
                 }
             }
         });
@@ -42,6 +46,7 @@ public class LoggedInFragment extends Fragment {
             @Override
             public void onChanged(Boolean loggedOut) {
                 if (loggedOut) {
+                    Toast.makeText(getContext(), "User Logged Out", Toast.LENGTH_SHORT).show();
                     Navigation.findNavController(getView()).navigate(R.id.action_loginRegisterFragment_to_loggedInFragment);
                 }
             }

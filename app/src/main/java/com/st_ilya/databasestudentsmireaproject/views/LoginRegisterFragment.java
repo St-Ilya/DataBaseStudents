@@ -61,6 +61,8 @@ public class LoginRegisterFragment extends Fragment {
 
                 if (email.length() > 0 && password.length() > 0) {
                     loginRegisterViewModel.register(email, password);
+                } else {
+                    Toast.makeText(getContext(), "Email Address and Password Must Be Entered", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -73,6 +75,8 @@ public class LoginRegisterFragment extends Fragment {
 
                 if (email.length() > 0 && password.length() > 0) {
                     loginRegisterViewModel.login(email, password);
+                } else {
+                    Toast.makeText(getContext(), "Email Address and Password Must Be Entered", Toast.LENGTH_SHORT).show();
                 }
             }
         });
