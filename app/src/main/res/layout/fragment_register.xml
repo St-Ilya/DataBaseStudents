@@ -52,115 +52,136 @@
         android:id="@+id/nameTextEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rect_register_form"
         android:fontFamily="@font/josefinsansbold"
-        android:gravity="center"
 
+        android:gravity="center"
         android:hint="Name"
         android:inputType="textPersonName"
         android:textColorHint="@color/white"
         android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
         app:layout_editor_absoluteY="216dp" />
 
     <EditText
         android:id="@+id/surnameTextEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rect_register_form"
         android:fontFamily="@font/josefinsansbold"
         android:gravity="center"
         android:hint="Surname"
         android:inputType="textPersonName"
         android:textColorHint="@color/white"
-        android:textSize="24dp"
 
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="283dp" />
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextEditText"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/middleNameTextEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rect_register_form"
         android:fontFamily="@font/josefinsansbold"
         android:gravity="center"
         android:hint="Middle name"
         android:inputType="textPersonName"
         android:textColorHint="@color/white"
-        android:textSize="24dp"
 
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="350dp" />
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/surnameTextEditText"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/dateOfBirthTextEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rect_register_form"
         android:fontFamily="@font/josefinsansbold"
         android:gravity="center"
         android:hint="Date of birth"
         android:inputType="date"
         android:textColorHint="@color/white"
-        android:textSize="24dp"
 
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="417dp" />
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/middleNameTextEditText"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/groupNumberTextEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rect_register_form"
         android:fontFamily="@font/josefinsansbold"
         android:gravity="center"
         android:hint="Group number"
         android:inputType="text"
         android:textColorHint="@color/white"
-        android:textSize="24dp"
 
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="484dp" />
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirthTextEditText"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/facultyTextEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rect_register_form"
         android:fontFamily="@font/josefinsansbold"
         android:gravity="center"
         android:hint="Faculty"
         android:inputType="text"
         android:textColorHint="@color/white"
-        android:textSize="24dp"
 
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="551dp" />
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/groupNumberTextEditText"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/passwordTextEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rect_register_form"
         android:fontFamily="@font/josefinsansbold"
         android:gravity="center"
         android:hint="Password"
         android:inputType="numberPassword"
         android:textColorHint="@color/white"
-        android:textSize="24dp"
 
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="618dp" />
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/facultyTextEditText"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="197dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/rect_register_form"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="107dp"
+
+
+        android:backgroundTint="#38694C"
+        android:elevation="4dp"
+        android:fontFamily="@font/josefinsansbold"
         android:text="Confirm"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="676dp" />
+        app:cornerRadius="220dp"
+        app:icon="@drawable/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextEditText"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
