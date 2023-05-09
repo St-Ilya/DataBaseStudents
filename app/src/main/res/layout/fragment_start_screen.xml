@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9EF2DA">
+
+    <TextView
+        android:id="@+id/startScreenWelcomeBack"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/rect"
+        android:fontFamily="@font/josefinsansbold"
+        android:gravity="center"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:text="Welcome Back!"
+        android:textColor="#FFFFFF"
+
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="294dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="#38694C"
+        android:elevation="4dp"
+        android:fontFamily="@font/josefinsansbold"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        app:cornerRadius="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startScreenWelcomeBack"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="294dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="173dp"
+        android:backgroundTint="#38694C"
+        android:elevation="4dp"
+        android:fontFamily="@font/josefinsansbold"
+        android:text="Sign up"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        app:cornerRadius="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInButton"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
