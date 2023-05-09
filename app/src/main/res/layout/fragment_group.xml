@@ -30,29 +30,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:background="#79AE8E"
-        app:cornerRadius="220dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="226dp" />
-
     <Button
         android:id="@+id/openSettingButton"
         android:layout_width="74dp"
         android:layout_height="82dp"
+        android:layout_marginStart="13dp"
+
         android:backgroundTint="#38694C"
-
         android:elevation="4dp"
-        app:cornerRadius="220dp"
 
+        app:cornerRadius="220dp"
         app:icon="@drawable/lines_leaning"
         app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#FFFFFF"
-        app:strokeWidth="2dp"
-        tools:layout_editor_absoluteX="337dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:strokeWidth="2dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
