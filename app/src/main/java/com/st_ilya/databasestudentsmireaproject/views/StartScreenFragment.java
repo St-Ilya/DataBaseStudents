@@ -33,9 +33,7 @@ public class StartScreenFragment extends Fragment {
         startScreenViewModel.getUserMutableLiveData().observe(this, new Observer<FirebaseUser>() {
             @Override
             public void onChanged(FirebaseUser firebaseUser) {
-                if (firebaseUser != null) {
-                    Navigation.findNavController(getView()).navigate(R.id.action_loginRegisterFragment_to_loggedInFragment);
-                }
+                Navigation.findNavController(getView()).navigate(R.id.action_startScreenFragment_to_loginRegisterFragment);
             }
         });
     }
@@ -51,14 +49,14 @@ public class StartScreenFragment extends Fragment {
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Hello", Toast.LENGTH_SHORT).show();
+                Navigation.findNavController(getView()).navigate(R.id.loginRegisterFragment);
             }
         });
 
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Hello", Toast.LENGTH_SHORT).show();
+                // toDo register navigation
             }
         });
 
