@@ -7,71 +7,101 @@
     android:layout_height="match_parent"
     android:background="#9EF2DA">
 
+    <TextView
+        android:id="@+id/textViewWelcomeBackInSignInScreen"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_marginTop="-59dp"
+        android:background="@drawable/rect"
+        android:fontFamily="@font/josefinsansbold"
+        android:gravity="center"
+        android:shadowColor="#40000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="4"
+        android:text="Welcome Back!"
+
+        android:textColor="#FFFFFF"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/fragment_loginregister_email"
         android:layout_width="match_parent"
         android:layout_height="87dp"
-        android:layout_marginTop="261dp"
 
+        android:layout_marginTop="121dp"
         android:background="@drawable/rect_register_form"
         android:ems="10"
+        android:fontFamily="@font/josefinsansbold"
         android:gravity="center"
         android:hint="Login"
-        android:fontFamily="@font/josefinsansbold"
+        android:inputType="textEmailAddress"
+
         android:textColor="@color/black"
         android:textSize="32dp"
-
-        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcomeBackInSignInScreen" />
 
     <EditText
         android:id="@+id/fragment_loginregister_password"
         android:layout_width="match_parent"
         android:layout_height="87dp"
-        android:layout_marginTop="447dp"
 
+        android:layout_marginTop="71dp"
         android:background="@drawable/rect_register_form"
         android:ems="10"
-        android:hint="Password"
-        android:gravity="center"
         android:fontFamily="@font/josefinsansbold"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+
         android:textColor="@color/black"
         android:textSize="32dp"
-
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_loginregister_email" />
 
     <Button
         android:id="@+id/fragment_loginregister_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
 
-        android:layout_marginBottom="116dp"
-        android:ems="10"
-        android:text="Login"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="107dp"
+        android:backgroundTint="#38694C"
+        android:elevation="4dp"
+        android:fontFamily="@font/josefinsansbold"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:cornerRadius="220dp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:icon="@drawable/check"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_loginregister_password"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp" />
 
     <Button
         android:id="@+id/fragment_loginregister_register"
         android:layout_width="165dp"
         android:layout_height="41dp"
 
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="123dp"
         android:ems="10"
         android:text="Register"
-
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_loginregister_login" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
