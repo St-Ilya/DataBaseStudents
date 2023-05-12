@@ -47,7 +47,7 @@ public class LoggedInFragment extends Fragment {
             public void onChanged(Boolean loggedOut) {
                 if (loggedOut) {
                     Toast.makeText(getContext(), "User Logged Out", Toast.LENGTH_SHORT).show();
-                    Navigation.findNavController(getView()).navigate(R.id.action_loggedInFragment_to_loginRegisterFragment);
+                    Navigation.findNavController(getView()).navigate(R.id.action_loggedInFragment_to_startScreenFragment);
                 }
             }
         });
