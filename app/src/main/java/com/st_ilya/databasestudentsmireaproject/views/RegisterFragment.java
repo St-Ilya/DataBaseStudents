@@ -1,5 +1,7 @@
 package com.st_ilya.databasestudentsmireaproject.views;
 
-public class RegisterFragment {
+import androidx.fragment.app.Fragment;
+
+public class RegisterFragment extends Fragment {
 
 }
