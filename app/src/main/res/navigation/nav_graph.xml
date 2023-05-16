@@ -11,6 +11,9 @@
         <action
             android:id="@+id/action_startScreenFragment_to_loginRegisterFragment"
             app:destination="@id/loginRegisterFragment" />
+        <action
+            android:id="@+id/action_startScreenFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginRegisterFragment"
@@ -28,5 +31,9 @@
             android:id="@+id/action_loggedInFragment_to_startScreenFragment"
             app:destination="@id/startScreenFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.st_ilya.databasestudentsmireaproject.views.RegisterFragment"
+        android:label="RegisterFragment" />
 
 </navigation>
