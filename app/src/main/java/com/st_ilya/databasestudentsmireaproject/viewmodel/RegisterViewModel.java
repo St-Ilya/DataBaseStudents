@@ -21,6 +21,10 @@ public class RegisterViewModel extends AndroidViewModel {
         userMutableLiveData = appRepository.getUserMutableLiveData();
     }
 
+    public void register(String email, String password) {
+        appRepository.register(email, password);
+    }
+
     public MutableLiveData<FirebaseUser> getUserMutableLiveData() {
         return userMutableLiveData;
     }
