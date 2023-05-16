@@ -56,7 +56,7 @@ public class StartScreenFragment extends Fragment {
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // toDo register navigation
+                Navigation.findNavController(getView()).navigate(R.id.registerFragment);
             }
         });
 
