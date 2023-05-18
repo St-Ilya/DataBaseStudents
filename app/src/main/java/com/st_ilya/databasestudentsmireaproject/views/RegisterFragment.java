@@ -73,18 +73,18 @@ public class RegisterFragment extends Fragment {
                 String surname = emailAddressLogin.getText().toString();
                 String middle = emailAddressLogin.getText().toString();
                 String date = emailAddressLogin.getText().toString();
+                String group = groupNumber.getText().toString();
                 String faculty = emailAddressLogin.getText().toString();
                 String password = emailAddressLogin.getText().toString();
 
                 if (email.length() > 0 && password.length() > 0) {
-                    registerViewModel.register(email, password);
+                    registerViewModel.register(email, name, surname, middle, date, group, faculty, password);
+                    Navigation.findNavController(getView()).navigate(R.id.loginRegisterFragment);
                 } else {
                     Toast.makeText(getContext(), "Email Address and Password Must Be Entered", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
-
 
         return view;
     }
