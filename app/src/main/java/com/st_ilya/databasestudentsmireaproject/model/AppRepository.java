@@ -31,15 +31,6 @@ public class AppRepository {
     private FirebaseFirestore fStore;
     private String userID;
 
-    private String emailAddressLogin;
-    private String name;
-    private String surname;
-    private String middleName;
-    private String dateOfBirth;
-    private String groupNumber;
-    private String faculty;
-    private String passwordd;
-
     public AppRepository(Application application) {
         this.application = application;
         this.firebaseAuth = FirebaseAuth.getInstance();
@@ -52,7 +43,7 @@ public class AppRepository {
         }
     }
 
-    public void register(String email, String password) {
+    public void register(String email, String name, String surname, String middleName, String dateOdBirth, String groupNumber, String faculty, String password) {
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(application.getMainExecutor(), new OnCompleteListener<AuthResult>() {
                     @Override
@@ -62,14 +53,14 @@ public class AppRepository {
                             fStore = FirebaseFirestore.getInstance();
                             DocumentReference documentReference = fStore.collection("users").document(userID);
                             Map<String, Object> user = new HashMap<>();
-                            user.put("email", emailAddressLogin);
+                            user.put("email", email);
                             user.put("name", name);
                             user.put("surname", surname);
                             user.put("middleName", middleName);
-                            user.put("dateOfBirth", dateOfBirth);
+                            user.put("dateOfBirth", dateOdBirth);
                             user.put("groupNumber", groupNumber);
                             user.put("faculty", faculty);
-                            user.put("password", passwordd);
+                            user.put("password", password);
 
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
