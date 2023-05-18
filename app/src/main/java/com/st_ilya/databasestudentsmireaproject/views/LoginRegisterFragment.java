@@ -53,19 +53,19 @@ public class LoginRegisterFragment extends Fragment {
         loginButton = view.findViewById(R.id.fragment_loginregister_login);
         registerButton = view.findViewById(R.id.fragment_loginregister_register);
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email = emailEditText.getText().toString();
-                String password = passwordEditText.getText().toString();
-
-                if (email.length() > 0 && password.length() > 0) {
-                    loginRegisterViewModel.register(email, password);
-                } else {
-                    Toast.makeText(getContext(), "Email Address and Password Must Be Entered", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+//        registerButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String email = emailEditText.getText().toString();
+//                String password = passwordEditText.getText().toString();
+//
+//                if (email.length() > 0 && password.length() > 0) {
+//                    loginRegisterViewModel.register(email, password);
+//                } else {
+//                    Toast.makeText(getContext(), "Email Address and Password Must Be Entered", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
