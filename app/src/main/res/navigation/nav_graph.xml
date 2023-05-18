@@ -34,6 +34,10 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.st_ilya.databasestudentsmireaproject.views.RegisterFragment"
-        android:label="RegisterFragment" />
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginRegisterFragment"
+            app:destination="@id/loginRegisterFragment" />
+    </fragment>
 
 </navigation>
