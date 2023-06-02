@@ -2,14 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9EF2DA">
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/groupViewInWindow"
         android:layout_width="325dp"
         android:layout_height="177dp"
 
@@ -37,13 +36,15 @@
         android:layout_marginStart="13dp"
 
         android:backgroundTint="#38694C"
+        android:contentDescription="@string/bottom_sheet_behavior"
         android:elevation="4dp"
 
         app:cornerRadius="220dp"
         app:icon="@drawable/lines_leaning"
         app:iconTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/groupViewInWindow"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#FFFFFF"
         app:strokeWidth="2dp" />
