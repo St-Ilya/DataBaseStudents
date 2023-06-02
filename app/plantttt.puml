@@ -1,0 +1,97 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class AppRepository {
+    public static final String TAG = "TAG";
+    private Application application;
+    private FirebaseAuth firebaseAuth;
+    private MutableLiveData<FirebaseUser> userMutableLiveData;
+    private MutableLiveData<Boolean> loggedOutMutableLiveData;
+    private FirebaseFirestore fStore;
+    private String userID;
+}
+
+class LoggedInViewModel extends AndroidViewModel {
+
+    private AppRepository appRepository;
+    private MutableLiveData<FirebaseUser> userMutableLiveData;
+    private MutableLiveData<Boolean> loggedOutMutableLiveData;
+}
+
+class LoginRegisterViewModel extends AndroidViewModel {
+
+    private AppRepository appRepository;
+    private MutableLiveData<FirebaseUser> userMutableLiveData;
+}
+
+class MainWindowViewModel extends AndroidViewModel {
+
+    private AppRepository appRepository;
+    private MutableLiveData<FirebaseUser> userMutableLiveData;
+}
+
+class RegisterViewModel extends AndroidViewModel {
+
+    private AppRepository appRepository;
+    private MutableLiveData<FirebaseUser> userMutableLiveData;
+}
+
+class StartScreenViewModel extends AndroidViewModel {
+
+     private AppRepository appRepository;
+     private MutableLiveData<FirebaseUser> userMutableLiveData;
+}
+
+class LoggedInFragment extends Fragment {
+
+    private TextView loggedInUserTextView;
+    private Button logOutButton;
+    private LoggedInViewModel loggedInViewModel;
+}
+
+class LoginRegisterFragment extends Fragment {
+
+    private EditText emailEditText;
+    private EditText passwordEditText;
+    private Button loginButton;
+    private Button registerButton;
+}
+
+class MainActivity extends AppCompatActivity {}
+
+class MainWindowFragment extends Fragment {
+
+    private Button openSettingButton;
+
+    private MainWindowViewModel mainWindowViewModel;
+}
+
+class RegisterFragment extends Fragment {
+
+    private EditText emailAddressLoginEdit;
+    private EditText nameEdit;
+    private EditText surnameEdit;
+    private EditText middleNameEdit;
+    private EditText dateOfBirthEdit;
+    private EditText groupNumberEdit;
+    private EditText facultyEdit;
+    private EditText passwordEdit;
+
+    private Button registerButton;
+
+    private RegisterViewModel registerViewModel;
+}
+
+class StartScreenFragment extends Fragment {
+
+    private Button signInButton;
+    private Button signUpButton;
+
+    private StartScreenViewModel startScreenViewModel;
+}
+
+
+
+
+
+@enduml
